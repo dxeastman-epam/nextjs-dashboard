@@ -3,15 +3,21 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
+    "lint": "next lint",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
+    "seed": "node -r dotenv/config ./scripts/seed.js",
     "start": "next start"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "@next/mdx": "^14.1.0",
     "@tailwindcss/forms": "^0.5.7",
+    "@types/mdx": "^2.0.10",
     "@types/node": "20.5.7",
-    "@vercel/postgres": "^0.5.0",
+    "@vercel/postgres": "^0.5.1",
     "autoprefixer": "10.4.15",
     "bcrypt": "^5.1.1",
     "clsx": "^2.0.0",
@@ -31,7 +37,7 @@
     "dotenv": "^16.3.1",
     "eslint": "^8.52.0",
     "eslint-config-next": "^14.0.0",
-    "eslint-config-prettier": "9.0.0",
+    "eslint-config-prettier": "^9.0.0",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "0.5.4"
   },
